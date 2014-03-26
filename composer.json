@@ -16,7 +16,8 @@
     ],
     "require": {
         "doctrine/common": "~2.4",
-        "doctrine/orm": "~2.4"
+        "doctrine/orm": "~2.4",
+        "akeneo/batch-bundle": "~0.1"
     },
     "require-dev": {
         "phpspec/phpspec": "2.0.*@dev",

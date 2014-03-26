@@ -24,5 +24,6 @@ class PimConnectorMappingExtension extends Extension
         $loader->load('managers.yml');
         $loader->load('mappers.yml');
         $loader->load('mergers.yml');
+        $loader->load('processors.yml');
     }
 }

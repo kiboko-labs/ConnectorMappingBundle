@@ -1,0 +1,6 @@
+parameters:
+    pim_connector_mapping.processor.mapping.class: Hermes\Bundle\ConnectorMappingBundle\Processor\MappingProcessor
+services:
+
+    pim_connector_mapping.processor.mapping:
+        class: %pim_connector_mapping.processor.mapping.class%

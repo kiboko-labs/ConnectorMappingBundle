@@ -1,5 +1,5 @@
 {
-    "name": "akeneo/connector-extras",
+    "name": "akeneo/connector-mapping",
     "type": "symfony-bundle",
     "description": "",
     "keywords": ["pim", "akeneo", "connector"],

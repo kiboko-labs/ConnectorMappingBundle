@@ -23,12 +23,11 @@
         "henrikbjorn/phpspec-code-coverage" : "1.0.*@dev"
     },
     "autoload": {
-        "psr-0": {
-            "psr-0": { "Pim\\Bundle\\ConnectorMappingBundle\\": "" }
-        }
+        "psr-0": { "Pim\\Bundle\\ConnectorMappingBundle\\": "" }
     },
     "config": {
         "bin-dir": "bin"
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "target-dir": "Pim/Bundle/ConnectorMappingBundle"
 }

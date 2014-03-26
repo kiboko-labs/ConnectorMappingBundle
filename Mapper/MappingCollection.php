@@ -25,7 +25,10 @@ class MappingCollection extends ArrayCollection
         }
 
         if ($this->containsKey($value['source'])) {
-            $value['target'] = $value['target'] !== null ? $value['target'] : $oldValue['target'];
+            $value['target'] = $value['target'] !== null && $value['target'] !== '' ?
+                $value['target'] :
+                $oldValue['target']
+            ;
         } else {
             $it           = $this->getIterator();
             $elementFound = false;

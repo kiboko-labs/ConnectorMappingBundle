@@ -3,7 +3,7 @@
 namespace Pim\Bundle\ConnectorMappingBundle\Processor;
 
 use Akeneo\Bundle\BatchBundle\Entity\StepExecution;
-use Pim\Bundle\MappingBundle\Entity\SimpleMapping;
+use Pim\Bundle\ConnectorMappingBundle\Entity\SimpleMapping;
 use Akeneo\Bundle\BatchBundle\Item\AbstractConfigurableStepElement;
 use Akeneo\Bundle\BatchBundle\Item\ItemProcessorInterface;
 use Akeneo\Bundle\BatchBundle\Step\StepExecutionAwareInterface;

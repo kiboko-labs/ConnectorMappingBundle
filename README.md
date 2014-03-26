@@ -1,2 +1,2 @@
-ConnectorMappingBundle
-======================
+connector-extras
+================

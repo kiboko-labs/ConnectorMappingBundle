@@ -18,24 +18,31 @@ class MappingCollection extends ArrayCollection
      */
     public function add($value)
     {
-        $oldValue = $this->get($value['source']);
-
-        if ($oldValue['deletable'] !== null) {
-            $value['deletable'] = $value['deletable'] === false ? $value['deletable'] : $oldValue['deletable'];
-        }
-
         if ($this->containsKey($value['source'])) {
-            $value['target'] = $value['target'] !== null && $value['target'] !== '' ?
-                $value['target'] :
-                $oldValue['target']
-            ;
+            $oldValue = $this->get($value['source']);
+
+            if (null === $value['target'] || $value['target'] === '') {
+                $value['target'] = $oldValue['target'];
+            }
+
+            if ($value['deletable'] === true) {
+                $value['deletable'] = $oldValue['deletable'];
+            }
         } else {
             $it           = $this->getIterator();
             $elementFound = false;
 
             while ($it->valid() && !$elementFound) {
-                if ($it->current()['target'] == $value['target'] && !$value['deletable']) {
-                    $this->remove($it->current()['source']);
+                $currentMapping = $it->current();
+
+                if ($currentMapping['target'] == $value['target']) {
+                    if ($currentMapping['deletable'] == false &&
+                        $currentMapping['source'] === $currentMapping['target']
+                    ) {
+                        $value['deletable'] = false;
+                        $this->remove($it->current()['source']);
+                    }
+
                     $elementFound = true;
                 }
 

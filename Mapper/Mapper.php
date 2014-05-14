@@ -3,7 +3,7 @@
 namespace Pim\Bundle\ConnectorMappingBundle\Mapper;
 
 /**
- * Abstract mapper
+ * Mapper
  *
  * @author    Julien Sanchez <julien@akeneo.com>
  * @copyright 2014 Akeneo SAS (http://www.akeneo.com)

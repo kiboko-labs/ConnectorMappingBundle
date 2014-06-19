@@ -1,0 +1,3 @@
+css:
+  pim_connector_mapping:
+    - bundles/pimconnectormapping/css/mapping-field.less

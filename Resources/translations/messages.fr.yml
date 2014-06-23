@@ -1,0 +1,4 @@
+pim_connector_mapping:
+    mapping:
+        attributeCode.source: Code d'attributs source
+        attributeCode.target: Code d'attributs cible

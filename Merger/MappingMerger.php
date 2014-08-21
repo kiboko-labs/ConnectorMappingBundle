@@ -84,9 +84,9 @@ class MappingMerger
      * Set mapping for all mappers
      * @param array $mapping
      */
-    public function setMapping($mapping)
+    public function setMapping(array $mapping)
     {
-        if ($this->hasParametersSet && is_array($mapping)) {
+        if ($this->hasParametersSet) {
             foreach ($this->getOrderedMappers() as $mapper) {
                 $mapper->setMapping($mapping);
             }

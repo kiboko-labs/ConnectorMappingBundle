@@ -86,7 +86,7 @@ class MappingMerger
      */
     public function setMapping($mapping)
     {
-        if ($this->hasParametersSet) {
+        if ($this->hasParametersSet && is_array($mapping)) {
             foreach ($this->getOrderedMappers() as $mapper) {
                 $mapper->setMapping($mapping);
             }

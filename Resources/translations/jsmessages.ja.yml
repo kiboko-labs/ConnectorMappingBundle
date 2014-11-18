@@ -1,0 +1,4 @@
+pim_connector_mapping_bundle:
+    mapping:
+        add: Add
+        not_blank: "この項目は必須項目です"

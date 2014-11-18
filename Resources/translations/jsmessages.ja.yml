@@ -1,18 +1,18 @@
 pim_connector_mapping_bundle:
     mapping:
         attribute:
-            source: "Akeneo$B$NB0@-(B"
-            target: "Magento$B$NB0@-(B"
+            source: "Akeneoの属性"
+            target: "Magentoの属性"
         storeview:
-            source: "Akeneo$B$N%m%1!<%k(B"
-            target: "Magento$B$N%9%H%"%S%e!<(B"
+            source: "Akeneoのロケール"
+            target: "Magentoのロケール"
         category:
-            source: "Akeneo$B$N%+%F%4%j(B"
-            target: "Magento$B$N%+%F%4%j(B"
-            placeholder: '$B%+%F%4%j$rA*Br(B'
-            empty: '$B3+;O$9$k$K$O(BMagento$B$N%a%$%s%+%F%4%j$r:n@.(B'
-        add: "$BDI2C(B"
-        not_blank: "$B$3$N9`L\$OI,?\9`L\$G$9(B"
+            source: "Akeneoのカテゴリ"
+            target: "Magentoのカテゴリ"
+            placeholder: 'カテゴリを選択'
+            empty: '開始するにはMagentoのメインカテゴリを作成してください'
+        add: "追加"
+        not_blank: "必須項目です"
         attributeCode:
-            source: "Akeneo$B$NB0@-%3!<%I(B"
-            target: "Magento$B$NB0@-%3!<%I(B"
+            source: "Akeneoの属性コード"
+            target: "Magentoの属性コード"
